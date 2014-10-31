@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+            
+           <ProgressBar
+           android:id="@+id/profile_loader"
+	    android:layout_width="wrap_content"
+    	android:layout_gravity="center"
+	    android:layout_height="wrap_content" />
+           
+           <TextView
+	    android:id="@+id/profile_message_default"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textColor="#F66"
+	    android:gravity="center"
+	    android:text="" />
+		
+        <LinearLayout
+            android:id="@+id/profile_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+			<LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+	            
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:orientation="vertical" >
+	
+	                <ImageView
+	                    android:id="@+id/imageView1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="top"
+	                    android:scaleType="fitStart"
+	                    android:src="@drawable/cartman"
+	                    android:padding="0px"
+	                    android:layout_margin="0px" />
+	
+	            </LinearLayout>
+	
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="top"
+	                android:layout_weight="1"
+	                android:orientation="vertical" >
+	
+	                <TextView
+	                    android:id="@+id/fullname"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	                <TextView
+	                    android:id="@+id/tag"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" />
+	
+	            </LinearLayout>
+	
+	        </LinearLayout>
+	
+	        <TextView
+	            android:id="@+id/textView1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="You previously answered"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	        <TableLayout
+	            android:id="@+id/profile_previous_answered"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+	
+	        </TableLayout>
+	
+	        <Button
+	            android:id="@+id/btn_see_slides"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:visibility="gone"
+	            android:text="See slides" />
+	    
+	    </LinearLayout>
+
+    </LinearLayout>
+    
+</ScrollView>

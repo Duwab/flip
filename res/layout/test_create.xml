@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button_create_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Notification" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description" />
+
+        <EditText
+            android:id="@+id/input_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+        <Button
+            android:id="@+id/button_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create" />
+        
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id" />
+
+        <EditText
+            android:id="@+id/input_questionid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="4112302667926997" />
+
+        <Button
+            android:id="@+id/button_getquestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get question" />
+
+        <Button
+            android:id="@+id/button_testarrayquestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get last questions" />
+        
+    </LinearLayout>
+    
+
+</ScrollView>
